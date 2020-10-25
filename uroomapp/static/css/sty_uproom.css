@@ -1,0 +1,255 @@
+body{
+    width: 1920pt;
+    height: 1080pt;
+}
+.font{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 35px/46px Malgun Gothic;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0963dbe0);
+    text-align: left;
+    font: normal normal normal 35px/46px Malgun Gothic;
+    letter-spacing: 0px;
+    color: #0963DBE0;
+    opacity: 1;
+    width: 50%;
+        
+}
+
+.navbar{
+    
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 40px/54px Malgun Gothic;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0963dbe0);
+    text-align: left;
+    font: normal normal normal 40px/54px Malgun Gothic;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #0963DBE0;
+    opacity: 1;
+    margin-bottom:20pt;
+    margin-top:15pt;
+    margin-left:2%;
+}
+
+.topline{
+    border-bottom: solid 2pt #0963DBE0;
+    width: 100%;
+    margin-bottom: 0;
+}
+.leftdiv{
+    
+    width: 80%;
+    height: 100%;
+    border-right: solid 2px #707070;
+    padding-top: 2%;
+    padding-left: 3%;
+    margin-top: 0;
+}
+.leftdiv_1{
+    display: flex;
+}
+.big1{
+    margin-right: 15%;
+}
+.big1_1{
+    margin-bottom: 5%;
+}
+.choosebox{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 35px/46px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 35px/46px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 1;
+    width: 50%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 18px;
+    opacity: 1;
+    margin-right: 3%;
+    display: flex;
+}
+.choose1{
+    position: relative;
+    top: 25%;
+    text-align: left;
+    width: 50%;
+    left: 17%;
+    height: 100%;
+    
+}
+.choose2{
+    position: relative;
+    top: 25%;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    left: 17%;
+}
+.chooseline{
+    border-right: solid 2px #707070;
+}
+.period{
+width: 400px;
+height: 100px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 30px/40px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 30px/40px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+}
+.photo{
+width: 800px;
+height: 400px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 40px/54px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 40px/54px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 1;
+margin-bottom: 40%;
+border-radius: 18px;
+}
+.explain{
+    width: 800px;
+height: 400px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border: 1px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 25px/33px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 25px/33px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 1;
+}
+.big1_1{
+    display: flex;
+}
+
+.insurance{
+    text-align: center;
+    width: 400px;
+height: 100px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 25px/33px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 25px/33px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 0.65;
+margin-bottom: 5%;
+}
+
+.monthly{
+    width: 400px;
+height: 100px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 25px/33px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 25px/33px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 0.65;
+margin-bottom: 5%;
+}
+
+.adress{
+    width: 800px;
+height: 100px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 25px/33px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 25px/33px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 0.57;
+margin-bottom: 5%;
+}
+
+.contact{
+    width: 800px;
+height: 100px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 25px/33px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 25px/33px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 0.65;
+margin-bottom: 5%;
+}
+
+.hashtag{
+    width: 800px;
+height: 400px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border: 1px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 25px/33px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 25px/33px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 1;
+margin-bottom: 20%;
+}
+
+.uploadroom{
+    width: 677px;
+height: 126px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 2px solid #707070;
+border-radius: 18px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 40px/54px Malgun Gothic;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0963dbe0);
+text-align: left;
+font: normal normal normal 40px/54px Malgun Gothic;
+letter-spacing: 0px;
+color: #0963DBE0;
+opacity: 1;
+margin-left: 520px;
+}

@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type='text/css' href="{% static 'css/sty_uproom.css' %}">
+</head>
+
+<body>
+    <div class="navbar">방있어</div>
+    <hr class="topline">
+    <div class="leftdiv">
+        <form action="{% url 'create' %}">
+        <div class="leftdiv_1">
+            <div class="big1">
+                <div class="big1_1">
+                    <div class="choosebox">
+                        <div class="choose1">새방</div>
+                        <div class="chooseline"></div>
+                        <div class="choose2">승계</div>
+                    </div>
+                    <select class="period" name="period" id="">
+                        <option value="">희망계약기간</option>
+                        <option value="6m">6개월</option>
+                        <option value="1y">1년</option>
+                        <option value="direct">직접입력</option>
+                    </select>
+                </div>
+                <div class="font">보증금</div>
+                <input type="text" name="insurance" class="insurance">
+                <div class="font">월세</div>
+                <input type="text" name="monthly" class="monthly">
+                <div class="font">주소</div>
+                <input type="text" name="adress" class="adress">
+                <div class="font">연락처</div>
+                <input type="text" name="contact" class="contact">
+                <textarea name="explain" class="explain">방에 대한 설명을 적어주세요</textarea>
+            </div>
+            <div class="big2">
+                <div class="photo">방사진 추가하기</div>
+                
+            </div>
+        </div>
+       
+        <input type="submit" value="방 올리기" class="uploadroom">
+    </form>
+    </div>
+
+</body>
+
+</html>

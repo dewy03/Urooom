@@ -1,0 +1,232 @@
+.allmap{
+    z-index: 20;
+    position: relative;
+    display: flex;
+}
+#map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+width: 443px;
+height: 1150px;
+margin-top: 20px;
+margin-left: 20px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 46px;
+opacity: 0.63;
+}
+
+.navbar{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 40px/54px Malgun Gothic;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0963dbe0);
+    text-align: left;
+    font: normal normal normal 40px/54px Malgun Gothic;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #0963DBE0;
+    opacity: 1;
+    margin-bottom:20pt;
+    margin-top:15pt;
+    margin-left:2%;
+    display: flex;
+}
+
+.topline{
+    border-bottom: solid 2pt #0963DBE0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.infoset{
+    margin-left: 21px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: normal normal normal 40px/54px Malgun Gothic;
+    letter-spacing: 0px;
+    color: #0963DBE0;
+    opacity: 1;
+}
+
+.roomimage{
+    position: relative;
+    top: 10%;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    width: 389px;
+    height: 291px;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+.money{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 389px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 41px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.m_left{
+    position: relative;
+    top: 10%;
+    width: 389px;
+    height: 69px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-right:solid 1px #707070;
+    border-radius: 41px 0px 0px 41px;
+}
+.m_right{
+    position: relative;
+    top: 10%;
+    width: 389px;
+    height: 69px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+}
+.rate{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 389px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 41px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ratetext{
+    height: 69px;
+    position: relative;
+    top: 10%;
+}
+.star{
+    height: 69px;
+    position: relative;
+    top: 10%;
+    color:#FFD500;
+}
+
+.notice1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 389px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 41px;
+}
+.notice2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10%;
+    width: 389px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 41px;
+}
+.detailview{
+    position: relative;
+    top: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 389px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 41px;
+}
+
+.mainbtn3{
+    width: 180pt;
+    height: 50pt;
+    font-size:28pt;
+    color:#0963DBE0 ;
+    border-radius: 22pt;
+    border:#0963DBE0 solid 1pt;
+    background:#ffffff
+    
+}
+
+.mainbtn1{
+    width: 180pt;
+    height: 50pt;
+    font-size:28pt;
+    color:#0963DBE0 ;
+    margin-left: ;
+    border-radius: 22pt;
+    border:#0963DBE0 solid 1pt;
+    background:#ffffff
+    
+}
+.mainbtn2{
+    width: 180pt;
+    height: 50pt;
+    font-size:28pt;
+    color:#0963DBE0 ;
+    font-size:28pt;
+    font-family:#0963DBE0 ;
+    border-radius: 22pt;
+    border:#0963DBE0 solid 1pt;
+    background:#ffffff
+    
+    
+}
+.btngroup{
+    margin-left:59%;
+    display:flex:
+    font-size:28pt;
+    font:#0963DBE0;
+    
+}
+#price{
+    z-index: 200;
+    position: relative;
+    display: flex;
+    font-family:#707070;
+    font-size:18pt;
+    font-weight:400;
+    font: 25pt;
+    width: 120pt;
+    height: 50pt;
+    border-radius: 25pt;
+    margin-left: 85%;
+    margin-top: 0.5%;
+    font:#707070 25pt;
+    box-shadow: 2pt 2pt #707070;
+    
+}
+
+#roomst{
+    z-index: 200;
+    position: relative;
+    display: flex;
+    font-family:#707070;
+    font-size:18pt;
+    font-weight:400;
+    width: 120pt;
+    height: 50pt;
+    border-radius: 25pt;
+    margin-left: 5pt;
+    margin-top: 0.5%;
+    font:#707070 2pt;
+    box-shadow: 2pt 2pt #707070;
+}
+.dropdown1{
+    display: flex;
+}

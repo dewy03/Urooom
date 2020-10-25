@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel='stylesheet' type='text/css' href="{% static 'css/main.css' %}">
+    <title>Main</title>
+    <style type="text/css">
+        a {
+            text-decoration: none
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar"><a href="{% url 'main' %}">방있어</a>
+
+        <div class="btngroup">
+            <button class="mainbtn1"><a href="{% url 'uploadroom' %}">방 올릴래요</a></button>
+            <button class="mainbtn2">방 구할래요</button>
+            {% if user.is_authenticated %}
+            <button class="mainbtn3"><a href="{% url 'mypage' %}">마이페이지</a></button>
+            {% else %}
+            <button class="mainbtn3"><a href="{% url 'login' %}">마이페이지</a></button>
+            {% endif %}
+
+        </div>
+    </div>
+    </div>
+    <hr class="topline">
+    <div id="map">
+        <div class="allmap">
+            <div class="info">
+                <div class="infoset">
+                    <div class="roomimage"><img src="{%static 'unnamed.jpg' %}" width="380"></div>
+                    
+                    <div class="money">
+                        <div class="m_left">200{{room.insurance}}</div>
+                        <div class="m_right">35{{room.monthly}}</div>
+                    </div>
+                    
+                    <div class="rate">
+                        <div class="ratetext">별점:</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="notice1">
+                        <div class="ratetext">주차장 있음</div>
+                    </div>
+                    <div class="notice2">
+                        <div class="ratetext">냉장고 옵션</div>
+                    </div>
+                    <div class="detailview">
+                        <div class="ratetext">상세 페이지</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown1">
+
+        <select name='price' id="price">
+            <option value='' selected>-- 선택 --</option>
+            <option value='a'>20만원대</option>
+            <option value='b'>30만원대</option>
+            <option value='l'>40만원대</option>
+        </select>
+
+        <select name='price' id="roomst">
+            <option value='' selected>-- 선택 --</option>
+            <option value=''>일반</option>
+            <option value=''>승계</option>
+
+        </select>
+
+    </div>
+
+
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8590e841567fd38ec306b7976d4c60f8"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
+</body>
+
+</html>

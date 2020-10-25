@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style_newmember.css' %}">
+
+    <title>회원가입 페이지</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="brandname"><a href="{% url 'main' %}">방있어</a></div>
+        <hr class="topline">
+        <div class="menuname">회원가입</div>
+        <hr class="underbar">
+
+        <form method="POST" action="{% url 'newmember'%}">
+            {% csrf_token %}
+            <div class="content">
+
+                <div class="content1">
+                    닉네임</div><input name="nickname" class="password" placeholder="닉네임을 입력하시오." type="text">
+                <div class="content1">
+                    아이디</div><input name="username" class="password" placeholder="아이디를 입력하시오." type="text">
+                <div class="content1">
+                    비밀번호</div><input name="password" class="password" placeholder="비밀번호를 입력하시오" type="password">
+                <div class="content1">
+                    비밀번호 확인</div>
+                <div class="content2"><input name="passwordcheck" class="password" placeholder="비밀번호를 입력하시오"
+                        type="password">
+                    <button id="button1">확인</button></div>
+                <div class="content1">
+                    전화번호</div>
+                <div class="content2"><input name="HP" class="password" placeholder="010-0000-0000" type="text">
+                    <button id="button1">승인요청</button></div>
+                <div class="content1">
+                    승인번호</div><input name="HP_check" class="password" placeholder="승인번호를 입력하시오." type="text">
+
+            </div>
+            <div class="complete0">
+                <button id="complete">
+                    회원가입
+                </button>
+            </div><input type="submit">
+        </form>
+    </div>
+
+    <!-- <div class="container background">
+
+        <form id="login-form" method="post">
+            <div class="name"> <span> 회원가입</span></div>
+
+            <input name="password" class="password" placeholder="닉네임" type="text">
+            <input name="password" class="password" placeholder="아이디" type="text">
+            <input name="password" class="password" placeholder="패스워드" type="password">
+            <input name="password" class="password" placeholder="패스워드 재입력" type="password">
+            <input type="image" class="ok" src="image/login2_1.png" value="확인">
+
+
+
+
+
+        </form>
+    </div> -->
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

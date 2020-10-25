@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href="{% static 'css/style_login.css' %}">
+    <style type="text/css">
+        a {
+            text-decoration: none
+        }
+    </style>
+</head>
+
+<body>
+    {% if error %}
+    {{ error }}
+    <br>
+    <h1>이미 있는 아이디 입니다.</h1>
+    <br>
+    {% endif %}
+    <div class="navbar"><a href="{% url 'main' %}">방있어</a></div>
+    <hr class="topline">
+    <div class="layout_login">
+
+        <div class="logo">
+            로고
+        </div>
+        <form method="POST" action="{% url 'login'%}">
+            {% csrf_token %}
+            <div class="id">
+                <div class="idtext">아이디</div>
+                <input class="idbox" name="username" type="text" value="">
+            </div>
+            <div class="id">
+                <div class="pwtext">비밀번호</div>
+                <input class="idbox" name="password" type="password" value="">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <div class="layout_or">
+        <hr class="line">
+        <div class="or">OR</div>
+        <hr class="line">
+    </div>
+    <div class="layout_or">
+        <div class="signuptext">아직 회원이 아니신가요?</div>
+        <div class="signupbutton"><a href="{% url 'newmember' %}">회원가입</div>
+    </div>
+    <div class="layout_or">
+        <div class="findtext">
+            아이디, 비밀번호를 잊으셨나요?
+        </div>
+        <div class="signupbutton"><a href="{% url 'newmember' %}">회원가입</div>
+    </div>
+    </div>
+    <div></div>
+
+</body>
+
+</html>

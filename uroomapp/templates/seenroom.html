@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href="{% static 'css/sty_seenroom.css' %}">
+    <style type="text/css">
+        a {
+            text-decoration: none
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar"><a href="{% url 'main' %}">방있어</a></div>
+    <hr class="topline">
+    <div class="leftdiv">
+        <div class="mypagelogo">
+            본 방
+            <hr class="mypageline">
+        </div>
+        <div class="container">
+
+            <div class="item">
+                <div class="itemleft">ddddd</div>
+                <div class="itemright">
+                    ddddd
+                </div>
+            </div>
+            <div class="reservation"></div>
+
+
+            <div class="item">
+                <div class="itemleft">ddddd</div>
+                <div class="itemright">dddddd</div>
+            </div>
+            <div class="item">
+                <div class="itemleft">ddddd</div>
+                <div class="itemright">dddddd</div>
+            </div>
+            <div class="item">
+                <div class="itemleft">ddddd</div>
+                <div class="itemright">dddddd</div>
+            </div>
+            <div class="item">
+                <div class="itemleft">ddddd</div>
+                <div class="itemright">dddddd</div>
+            </div>
+            <div class="item">
+                <div class="itemleft">ddddd</div>
+                <div class="itemright">dddddd</div>
+            </div>
+        </div>
+    </div>
+    <div class="rightdiv">
+        <table border="0" style="margin-left: auto; margin-right: auto; margin-top: 30px">
+
+            <tr>
+                <!-- 첫번째 줄 시작 -->
+                <td>
+                    <div class="button2">
+                        <div class="buttonfont1"><a href="{% url 'mypage' %}">프로필</a></div>
+                    </div>
+                </td>
+
+            </tr><!-- 첫번째 줄 끝 -->
+            <tr>
+                <!-- 두번째 줄 시작 -->
+                <td>
+                    <div class="button2">
+                        <div class="buttonfont1"><a href="{% url 'scrap' %}">스크랩</a></div>
+                    </div>
+                </td>
+            </tr><!-- 두번째 줄 끝 -->
+            <tr>
+                <!-- 두번째 줄 시작 -->
+                <td>
+                    <div class="button1">
+                        <div class="buttonfont6"><a href="{% url 'seenroom' %}">본 방</a></div>
+                    </div>
+                </td>
+            </tr><!-- 두번째 줄 끝 -->
+            <tr>
+                <!-- 두번째 줄 시작 -->
+                <td>
+                    <div class="button2">
+                        <div class="buttonfont3">거래내역</div>
+                    </div>
+                </td>
+            </tr><!-- 두번째 줄 끝 -->
+            <tr>
+                <!-- 두번째 줄 시작 -->
+                <td>
+                    <div class="button2">
+                        <div class="buttonfont4">내가 올린 방</div>
+                    </div>
+                </td>
+            </tr><!-- 두번째 줄 끝 -->
+            <tr>
+                <!-- 두번째 줄 시작 -->
+                <td>
+                    <div class="button2">
+                        <div class="buttonfont5"><a href="{% url 'review' %}">후기</a></div>
+                    </div>
+                </td>
+            </tr><!-- 두번째 줄 끝 -->
+        </table>
+    </div>
+</body>
+
+</html>
