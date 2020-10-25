@@ -1,5 +1,5 @@
 appdirs                       
-asgiref==3.2                       
+asgiref==3.2.10                    
 astroid                       
 attrs                         
 beautifulsoup4                
