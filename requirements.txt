@@ -1,5 +1,5 @@
 appdirs                       
-asgiref                       
+asgiref==3.2                       
 astroid                       
 attrs                         
 beautifulsoup4                
@@ -12,7 +12,7 @@ Django
 filelock                      
 gunicorn                      
 isort                         
-lazy-object-proxy             
+lazy-object-proxy==1.4         
 mccabe                        
 pathspec                      
 Pillow                        
